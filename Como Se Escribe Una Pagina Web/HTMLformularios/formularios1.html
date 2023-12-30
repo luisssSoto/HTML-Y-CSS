@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- NOTA IMPORTANTE: todos los input deben de estar dentro de una etiqueta forma ya que sin esta, los 
+    campos estaran presentes pero la informacion recolectada no se enviara y submit es necesario para el envio-->
+    <!-- form -->
+    <!-- Estos valores de los atributos method, accept-charset y enctype son por defecto y no es necesario ponerlos -->
+    <form action="google.com" method="get" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded"></form>
+    
+    <!-- El valor "multipart/form-data" del atributo enctype permetira enviar archivos -->
+    <form action="google.com" method="get" enctype="multipart/form-data"></form>
+    <form action="google.com" method="post" ></form>
+
+    <!-- input atributos name y type-->
+    <!-- Los atributos maxlength, size y value solo son para los type="text" -->
+    <input type="text" name="email" maxlength="5" size="20" value="Buscar..."/>
+
+    <!-- Los atributos name en los type="checkbox" identifican a las casillas de 
+    verificacion con todas aquellas con el mismo name, checked es otro atributo
+    propio de los checkbox al igual que value -->
+    <br><input type="checkbox" name="casilla de verificacion" checked="checked" value="1"/>
+    <input type="checkbox" name="casilla de verificacion" value="2">
+
+    <!-- Los atributos name funcionan igual que los checkbox, checked y value hacen lo mismo que checbox -->
+    <br><input type="radio" name="casilla de opcion" checked="checked" value="lo que se va a enviar"/>
+    <br><input type="radio" name="casilla de opcion"/>
+
+    <!-- El atributo accept decedira los tipos de archivos que se podran subir -->
+    <br><input type="file" name="subir fichero" accept="image/png"/>
+
+    <!-- Los mismo atributos del type="texto" -->
+    <br><input type="password" name="texto enmascarado" maxlength="5" size="3"/>
+    
+    <br><input type="hidden" name="campo oculto" value="el valor que se debe de enviar"/>
+    
+    <!-- El type="button" se le da funcionalidad con JS -->
+    <br><input type="button" name="boton" value="Boton JS"/>
+
+    <!-- El type="submit" enviara el formulario al destino marcado en el valor del atributo action del form -->
+    <br><input type="submit" name="boto de enviar" value="Boton submit"/>
+    
+
+    <br><input type="image" name="imagen como boton de enviar" alt="haloWars" src="./haloWars.jpg"/>
+    <br><input type="reset" name="boton de limpiar" value="Boton reset"/>    
+
+    <!-- input disabled -->
+    <br><input type="text" value="Hello, world!" disabled="disabled">
+
+    <!-- input readonly -->
+    <br><input type="text" value="Hello, world!" readonly="readonly">
+
+
+</body>
+</html>

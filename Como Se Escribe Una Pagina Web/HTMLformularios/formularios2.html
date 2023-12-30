@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forkmularios parte 2</title>
+</head>
+<body>
+    <!-- Los atributos de name y multiple aparecen en este tipo de listas
+    el atributo con su valor multiple="multiple" permite seleccionar
+    mas de un elemento de la lista desplegable con la tecla ctrl en 
+    Windows -->
+    <select name="listas" id="" multiple="multiple">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+    </select>
+
+    <!-- Listas desplegables por grupos y subgrupos -->
+    <select name="" id="">
+        <optgroup label="HTML">
+            <option value="tables">Tablas</option>
+            <option value="forms">Formularios</option>
+        </optgroup>
+        <optgroup label="Css">
+            <option value="colors">Colores</option>
+        </optgroup>
+    </select>
+
+    <!-- La textarea nos ayuda a escribir texto pero con el beneficio de que 
+    este texto puede pasar saltos de linea dando enter  -->
+    <textarea name="text area" id="" cols="5" rows="10"></textarea>
+
+    <!-- label mejora la usabilidad y accesibilidad -->
+    <!-- En el siguiente ejemplo el for="HTML" se asocia con el id="HTML" 
+    Es decir se asocia un label con su control de formulario con el que se va a asociar-->
+    <form action="">
+        <label for="html">HTML</label><input value="HTML5" type="radio" name="tema" id="html">
+        <br>
+        <label for="css">CSS</label><input type="radio" name="tema" id="css">
+    </form>
+
+    <!-- La etiqueta fieldset permite una agrupacion semantica
+    ademas de que nos proporciona un marco dentro de esta etiqueta
+    se puede añadir la etiqueta legend para separar los topicos -->
+    <fieldset>
+        <legend>Perfil</legend>
+        Nombre: <input type="text"><br/>
+        Email: <input type="text"><br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Temas</legend>
+        <input type="checkbox">HTML/>
+        <input type="checkbox">CSS/>
+    </fieldset>
+
+
+</body>
+</html>
