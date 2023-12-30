@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas parte 1</title>
+</head>
+<body>
+
+    <!-- El atributo tr es para las filas, el atributo td es para las celdas
+    pero este ultimo puede sustituirse por el th si se desea que el contenido
+    dentro de la celda este en negritas -->
+    <!-- Ahora bien el thead, tbody y el tfoot solo se utiliza como separador para 
+    que el estilisado con CSS sea mas simple -->
+    <table>
+        <thead>
+            <tr>
+                <th>ALUMNO</th>
+                <th>NOTA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pepe</td>
+                <td>7.65</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>8.54</td>
+            </tr>
+            <tr>
+                <td>Jordi</td>
+                <td>5.55</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>MEDIA</th>
+                <th>7.25</th>
+            </tr>
+            <tr>
+                <th>DESV.TIPICA</th>
+                <th>7.35</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <br>
+    
+    <!-- El atributo caption nos ayuda a poner un titulo a la tabla -->
+    <table>
+        <caption>Mi primera tabla</caption>
+        <thead>
+            <tr>
+                <th>ALUMNO</th>
+                <th>NOTA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pepe</td>
+                <td>7.65</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>8.54</td>
+            </tr>
+            <tr>
+                <td>Jordi</td>
+                <td>5.55</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>MEDIA</th>
+                <th>7.25</th>
+            </tr>
+            <tr>
+                <th>DESV.TIPICA</th>
+                <th>7.35</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    
+    <!-- Atributos colspan y rowspan se aplica a th y td-->
+    <table>
+        <caption>Ingresos</caption>
+        <thead>
+            <tr>
+                <td colspan="2">2012</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Enero</td>
+                <td>100E</td>
+            </tr>
+            <tr>
+                <td>50E</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Febrero</td>
+                <td>75E</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    
+    <!-- Si se desea trabajar con grupos de columnas para darles 
+    una cierta cantidad de columnas por grupo se utiliza el 
+    atributo colsgroup -->
+    <table>Ingresos 2023
+        <colgroup span="2">
+            <tr>
+                <td>Enero</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Enero</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>2</td>
+            </tr>
+        </colgroup>
+        <colgroup>
+            <tr>
+                <td>100&euro;</td>
+                <td>50&euro;</td>
+                <td>Febrero</td>
+            </tr>
+        </colgroup>
+    </table>
+    <br><br>
+    
+    <!-- Ejercicios practicos -->
+    <!-- Ejercicio1 -->
+    <table>
+        <caption>Ingresos</caption>
+        <thead>
+            <tr>
+                <td colspan="2">2012</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Enero</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>100&euro;</td>
+                <td>50&euro;</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>75&euro;</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    
+    <!-- Ejercicio1 -->
+    <table>
+        <caption>Ingresos</caption>
+        <thead>
+            <tr>
+                <td colspan="2">2012</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" colspan="0.5">Enero</td>
+                <td colspan="0.5">1</td>
+                <td>100&euro;</td>
+            </tr>
+            <tr>
+                <td colspan="0.5">2</td>
+                <td>50&euro;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Febrero</td>
+                <td>75&euro;</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
