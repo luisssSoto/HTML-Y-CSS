@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+<body>
+    <!-- Etiqueta imagen -->
+    
+    <!-- Atributos obligatorios son "src" y "alt"-->
+    <img src="./jiraiya.jpg" alt="jiraiya vs pain">
+
+    <!-- Imagen desde un servidor web -->
+    <img src="https://i.pinimg.com/564x/60/ee/f8/60eef8475fcb79a36416335c8ac6af6a.jpg" alt="rick and morty">
+
+    <!--Atributos opcionales "width" y "height" "longdesc"-->
+    <img src="./luffy.jpg" alt="luffy 5th geard" width="100px" height="200px" longdesc="https://www.pinterest.com.mx/pin/101049585382029876/">
+
+    <!-- Para utilizar mapas de imagen o imagen sensible tienes que utilizar los siguientes
+    atributos: "usemap" (para el lado del cliente) y "ismap" para el 
+    lado del servidor. A continuacion se usara el del lado del cliente
+    ya que es el mas comun-->
+
+    <img src="./Explora todos los productos y servicios de Google - Google.jpg" alt="Servicios que ofrece Google" usemap="#googlemap"/>
+    <map name="googlemap">
+        <area shape="rect" coords="0,0,200,150" href="https://www.google.com/intl/es-419/gmail/about/" alt="gmail">
+        <area shape="circle" coords="600, 500, 100" href="https://www.youtube.com/" alt="youtube">
+        <area shape="poly" coords="500, 500, 650, 750, 80, 60" href="https://www.google.com/chrome/dr/download/" alt="google chrome">
+    </map>
+    
+
+</body>
+</html>
