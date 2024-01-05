@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario</title>
+</head>
+<body>
+    <h1>Nuevas caracteristicas de HTML5 en formularios</h1>
+    <p>Este es un ejemplo sobre las nuevas caracteristicas de HTML5 en formularios</p>
+    <form action="" id="form-order">
+        <p>
+            <!-- Etiqueta label aplicada de manera explicita -->
+            <label for="name">Nombre (Obligatorio)</label>
+            <input type="text" name="name" id="name" 
+            placeholder="Juan Perez" 
+            autofocus="autofocus" 
+            autocomplete="" 
+            required="required">
+        </p>
+        <p>
+            <label for="pass">Contraseña (obligatoria)</label>
+            <input type="password" name="passwd" id="pass" 
+            placeholder="qwe1234" 
+            pattern="[a-z]{3}[0-9]{4}" 
+            required="required">La contraseña debe de incluir 3 letras y 4 numeros en ese orden
+        </p>
+        <p>
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="+3310157879" pattern="[0-9]{10}">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@email.com">
+        </p>
+        <p>
+            <label for="website">Tu pagina web</label>
+            <input type="url" name="website" id="website" placeholder="http://www.tuweb.com">
+        </p>
+        <p>
+            <label for="numberexample">N° de temas</label>
+            <input type="number" name="numberexample" id="numberexample" min="2" max="14" placeholder="2" step="2"> (Entre 2 y 14, solo pares)
+        </p>
+        <p>
+            <label for="deliverydate">Fecha de envio</label>
+            <input type="date" name="deliverydate" id="deliverydate" min="2012-07-16"> (minimo del 16 de Julio de 2012)
+        </p>
+        <p>
+            <label for="colorexample">Color del item</label>
+            <input type="color" name="colorexample" id="colorexample" value="#41ADAF">
+        </p>
+        <p>
+            <label for="search">Buscar</label>
+            <input type="search" name="search" id="search">
+        </p>
+        <p>
+            <label for="points">Rango de valores</label>
+            <input type="range" name="points" id="points" min="1" max="10">(entre 1 y 10)
+        </p>
+        <p>
+            <!-- La etiqueta fieldset agrupa a un conjunto de etiquetas que tienen algo en comun en un marco -->
+            <fieldset>
+                <!-- La etiqueta legend pone un titulo a un grupo de etiquetas que tienen algo en comun -->
+                <legend>Selecciona una prioridad</legend>
+                <!-- Aqui se puede apreciar como se utiliza la etiqueta label de manera implicita -->
+                <p><label><input type="radio" name="priority" value="baja" checked="checked">Baja</label></p>
+                <p><label><input type="radio" name="priority" value="media">Media</label></p>
+                <p><label><input type="radio" name="priority" value="alta">Alta</label></p>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Selecciona el tipo de envio</legend>
+                <p><label><input type="checkbox" name="deliverytype" value="urgente" checked="checked">Urgente</label></p>
+                <p><label><input type="checkbox" name="deliverytype" value="acuse">Con acuse de recibo</label></p>
+                <p><label><input type="checkbox" name="deliverytype" value="reembolso">Contra reembolso</label></p>
+            </fieldset>
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
