@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios parte 2</title>
+</head>
+<body>
+        <!-- 2da parte de HTML 5 -->
+        <!-- El autocomplete funciona con los siguientes tipos de input: 
+        text, search, url, tel, email, date pickers, password, range, color -->
+    <form action="" autocomplete="on">
+        <input type="email" name="email" autocomplete="off">
+        <input type="password" name="contraseña" autocomplete="off"/>    
+    </form>
+
+    <!-- el atributo autofocus permite que una vez que se cargue la pagina
+    se centre el mouse en dicho sitio -->
+    <form action="">
+        <input type="text" name="nombre" autofocus="autofocus">
+    </form>
+
+    <!-- El atributo min, max y step funciona con los siguientes tipos:
+    number, range, date, datetime, datetime-local, month, time y week -->
+    <form action="">
+        <input type="number" name="cantidad" min="0" max="100" step="10">
+    </form>
+
+    <!-- El atributo pattern permite validar el input en base a una expresion
+    regular, este atributo funciona con los siguientes tipos: text, search, url
+    tel, email, password -->
+    <form action="">
+        <input type="text" name="prefijo_pais" pattern="[A-Za-z]{3}" title="Codigo de 3 letras">
+    </form>
+
+    <!-- El atributo placeholder permite una previsualizacion y es permitido 
+    con los siguientes valores de type: text, search, url, tel
+    email, password-->
+    <form action="">
+        <input type="text" name="nombre" placeholder="Juanito Bananas"/>
+    </form>
+
+    <!-- El required es un campo obligatorio y funciona con los siguientes
+    valores en type: text, search, url, tel, email, date pickers, password,
+    number, checkbox, radio, file -->
+    <form action="">
+        <input type="required" name="required"/>
+    </form>
+</body>
+</html>
