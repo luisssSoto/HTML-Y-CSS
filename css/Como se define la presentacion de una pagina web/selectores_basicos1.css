@@ -1,0 +1,43 @@
+/* Selectores de tipo, elemento o etiqueta */
+h1 {color: #00B;}
+span {color: #0B0;}
+
+/* Selectores de clase */
+.box{
+    background-color: #00B;
+    color: #FFF;
+}
+.bold{
+    font-weight: bold;
+}
+.red{
+    color: #B00;
+}
+
+/* Los selectores se pueden combinar justo como aqui
+en donde se combina un selector de tipo (span) con
+un selector de clase (.bold) */
+span.bold {font-weight: bold;}
+
+/* Selectores de identificador 
+si bien se puede aplicar a varios id en 
+el documento html, esto no es aconsejable 
+ya que cada id debe de ser exclusivo de 
+esa pagina web, asi que se puede usar ese
+id pero en diferentes paginas web*/
+#myDiv {color: #00B;}
+span#mySpan {color: #0B0;}
+
+/* Etiquetas anidadas
+Se empieza con el elemento con menor nivel
+de anidamiento*/
+div span {font-size: 2em;}
+span a {text-decoration: none;}
+
+/* Algunos ejemplos mas */
+.box span {font-size: 2em;}
+#myDiv span {font-size: 2em;}
+#mySpan a {text-decoration: none;}
+
+/* Agrupacion de reglas con cualquier tipo de selector */
+#myDiv, #mySpan {color: #0B0;}
