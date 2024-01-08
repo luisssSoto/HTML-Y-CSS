@@ -1,0 +1,8 @@
+/* En CSS y HTML tenemos 3 formas de representar colores
+en RGB, por nombres de color, color name, y especificando
+los valores de cada canal en orden estricto */
+p {
+    color: white;
+    border-color: #561010;
+    background-color: rgb(79, 129, 189);
+}
