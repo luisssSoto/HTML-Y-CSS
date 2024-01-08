@@ -1,0 +1,95 @@
+/* Descendientes directos */
+/* La siguiente declaracion se aplicara
+a todos los elementos li que esten }
+dentro de un elemento ul */
+/* ul li {
+    font-weight: bold;
+} */
+
+/* Podriamos hacer lo siguiente pero no 
+solucionaria el problema */
+/* ul#lista li {
+    font-weight: bold;
+} */
+
+/* La manera correcta de solucionarlo es con
+la seleccion por descendientes directos: 
+Pero no funciono :(*/
+ul#lista > li{
+    font-weight: bold;
+    color:brown;
+}
+
+/* Elementos contiguos */
+img.new + span{
+    font-weight: bold;
+}
+
+/* La siguiente declaracion se aplicara solo al 
+primer elemento de un conjunto de elementos
+anidados */
+li:first-child{
+    font-size: 2em;
+}
+
+/* En el siguiente caso como el elemento con la clase
+"letra" no es el primero del conjunto de elementos 
+"li" la declaracion CSS no se aplicara */
+li.letra:first-child {
+    font-size: 2em;
+}
+
+/* En la siguiente declaracion solo se aplicara
+a la primera letra de la etiqueta */
+.letra::first-letter{
+    font-size: 2em;
+}
+
+/* La siguiente aplica a la primera linea del elemento */
+.linea:first-line{
+    font-size: 2em;
+}
+
+/* Atributos */
+a[title]{
+    font-weight: bold;
+}
+
+/* Si se desea se puede ser mas especifico con los atributos */
+a[title=Buscador]{
+    color: green;
+}
+a[href="#"]{
+    color: green;
+}
+a[title="Pagina del curso"]{
+    color: red;
+}
+
+/* Se puede hacer una regla para varios elementos que cuenten
+con una coincidencia en el nombre como por ejemplo en el 
+siguiente caso */
+a[id|=top]{
+    background-color: yellow;
+}
+
+/* Tambien se puede hacer con palabras clave como por ejemplo aqui */
+a[title~=curso]{
+    color: green;
+}
+
+/* Tambien se puede especificar por medio del atributo "lang" */
+:lang(en){
+    font-style: italic;
+}
+
+/* Tambien se puede aplicar contenido al documento HTML con la 
+siguiente declaracion  */
+a.new:after{
+    content: "Nuevo";
+    color: #000;
+}
+a.old::before{
+    content: "DEP";
+    color: #000;
+}

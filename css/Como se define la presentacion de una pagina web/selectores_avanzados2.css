@@ -1,0 +1,43 @@
+/* En CSS3 se añadieron varios selectores de estado
+que hacen alusion a algunos selectores que estaban
+en CSS2 por ejemplo con first-child */
+ul > li:last-child{
+    font-weight: bold;
+}
+
+/* Tambien se puede elegir el elemento exacto al cual
+se le desea aplicar el diseño: */
+ul>li:nth-child(2){
+    font-weight: bold;
+}
+
+/* Tambien existen los siguientes:
+:first-of-type
+:last-of-type
+:nth-of-type(n)
+:nth-last-of-type(n) */
+
+/* En el siguiente ejemplo no se aplicara el cambio porque
+"p" no es el primer elemento de su padre "section" */
+p:first-child{
+    font-weight: bold;
+}
+/* Pero el siguiente ejemplo si funcionara porque es el
+primer hijo de tipo "p", de su padre "section"*/
+p:first-of-type{
+    font-weight: bold;
+}
+
+/* Tambien encontramos el selector ~ que es similar al signo 
++ cuando trabajamos con elementos contiguos */
+h2+h3{
+    font-weight: bold;
+}
+/* En el ejemplo de arriba, solo se aplicara al elemento mas 
+contiguo de h1 pero en el siguiente se aplicara a todos los
+elementos del mismo tipo */
+h2~h3{
+    font-weight: bold;
+}
+
+

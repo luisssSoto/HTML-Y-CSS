@@ -1,0 +1,48 @@
+/* Esta desaconsejado el uso del siguiente selector
+debido a que se aplica a todos los elementos del
+documento html que esta asociado */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Estas son las pseudoclases de estado que ayudan a cambiar el diseño
+de cualquier elemento de acuerdo a su comportamiento */
+
+/* Este estado se aplica a los links que no ha visitado el usuario */
+a:link {
+    text-decoration: none;
+}
+
+/* En contraste con el estado antes mencionado, en este
+caso, se aplicara a los links que ya ha visitado*/
+a:visited {
+    text-decoration: none;
+}
+
+/* El siguiente selector se aplica cuando el puntero del 
+mouse esta por encima del elemento tambien se aplica a 
+cualquier etiqueta, si se desea usar este selector con 
+algun otro mencionado con anterioridad, este elemento
+debera de ser el ultimo, ademas este elemento no se 
+aplicara a smartphones */
+a:hover{
+    text-decoration: none;
+    color: #95B3D7;
+}
+
+/* El selector active cumple su funcion cuando el usuario
+deja presionado con el mouse el elemento, y cuando este 
+elemento deja de ser presionado */
+a:active{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Este selector muestra un mayor enfoque al momento de que 
+el cursor del mouse pasa por el elemento */
+:focus{
+    border: 2pX;
+    border: solid #385D8A;
+}
