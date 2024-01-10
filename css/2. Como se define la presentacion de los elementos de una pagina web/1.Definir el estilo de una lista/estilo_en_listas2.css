@@ -1,0 +1,49 @@
+/* Para construir una barra navegadora se utilizan
+listas */
+
+/* Eliminar el subrayado en los enlaces */
+a{
+    text-decoration:none;
+}
+
+/* Eliminar el asterisco que aparece por defecto 
+en los elementos tipo "li" */
+.no-style{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Con la siguiente regla modificaremos la lista
+de manera vertical y agregaremos algunos elementos */
+.vertical a{
+    display: block;
+    width: 120px;
+    color: #FFFFFF;
+    background-color: #98BF21;
+    text-align: center;
+    padding: 4px;
+}
+.vertical a:hover, .vertical a:active{
+    background-color: #7A991A;
+}
+
+/* Con la siguiente regla modificamos la lista de manera 
+horizontal */
+.horizontal li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal a{
+    margin: 0;
+    color: #FFFFFF;
+    background-color: #98BF21;
+    text-align: center;
+    padding: 4px;
+}
+
+.horizontal a:hover, .horizontal a:active{
+    background-color: #7A991A;
+}
