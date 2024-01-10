@@ -1,0 +1,38 @@
+/* El circulo negro viene por defecto en el elemento
+"li" pero lo puedes poner */
+ul{
+    list-style-type: disc;
+}
+/* Esto hara que los elementos "li" tengan el
+circulo vacio */
+ul{
+    list-style-type: circle;
+}
+
+/* Esto hara que en lugar de circulo sea un cuadrado */
+ul{
+    list-style-type: square;
+}
+
+/*este atributo define el tipo de numeracion que los 
+elementos "li" pueden tomar*/
+.typeRoman{
+    list-style-type:lower-roman
+}
+
+/* El siguiente atributo define si los elementos "li"
+estaran un poco mas a la derecha o a la izquierda */
+.inside{
+    list-style-type: square;
+    list-style-position: inside;
+}
+.outside{
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+/* El siguiente atributo permite pegar una imagen en lugar
+de un circle que html tiene por defecto */
+.star{
+    list-style-image: url("star-solid.svg")
+}
