@@ -1,0 +1,39 @@
+/* "text-align" permite justificar o alinear el texto */
+h1{
+    text-align: right;
+}
+
+/* "text-indent" especifica la sangria de la primera
+linea de texto */
+p{
+    text-indent: 10%;
+}
+
+/* "text-decoration" permite que agreguemos algunas decoraciones
+en el texto */
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h4 li{
+    text-decoration: underline;
+}
+h4 p{
+    text-decoration: line-through;
+}
+
+/* "text-transform" permite convertir el texto en mayusculas o 
+minusculas segun sea el caso */
+dl{
+    background-color: #5eafd1;
+    color: aliceblue;
+}
+
+#lowercase{
+    text-transform: lowercase;
+}
+#uppercase{
+    text-transform: uppercase;
+}
+#capitalize{
+    text-transform: capitalize;
+}

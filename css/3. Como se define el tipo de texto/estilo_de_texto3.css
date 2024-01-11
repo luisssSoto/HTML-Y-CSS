@@ -1,0 +1,24 @@
+/* Los siguientes atributos funcionan con los mismos
+valores que el atributo font-size y tambien pueden tomar
+valores negativos */
+/* Define el espacio del texto */
+#letter-spacing{
+    letter-spacing: 1em;
+}
+
+/* Define el espacio entre las palabras */
+#word-spacing{
+    word-spacing: 30cm;
+}
+
+/* Define el espacio la altura minima entre 
+cada linea */
+#line-height{
+    line-height: 4mm;
+}
+
+/* Define el texto tal y como se escribio en HTML */
+#white-space{
+    white-space: pre;
+}
+
