@@ -1,0 +1,19 @@
+p{
+    white-space: pre;
+    background-color: rgba(150, 110, 100, .75);
+}
+
+/* En CSS3 existe otro valor para darle a los colores: HSL
+Hue, Saturation, Lightness: Matiz, Saturacion y Luminosidad */
+/* Es mas intuitivo y mas parecido al ojo humano
+El matiz se maneja en valores de 0-360
+Saturacion y luminosidad en valores del 0 al 100% 
+Y tambien se puede utilizar el valor Alpha para HSL
+Pero tienen una fuerte critica debido a que la calidad de color
+esta determinada por el tamaño de la pantalla movil 
+del dispositivo seleccionado*/
+
+h2 {
+    background-color: rgb(10, 65, 92, .25);
+}
+
