@@ -1,0 +1,32 @@
+body{
+    color: green;
+    font-weight: bold;
+}
+
+main {
+    border: 2px solid black;
+}
+/* 
+Existen propiedades que se heredan de su padre por defecto, una de ellas
+es la de color pero a pesar de que color puede ser heredado
+por su padre existen algunas excepciones como por ejemplo 
+con la etiqueta <a> ya que esta, tiene un valor preestablecido
+para el atributo color proveniente del agente de usuario, asi que si 
+queremos heredar el valor de una propiedad del padre al hijo,
+incluso si esta propiedad no se puede heredar como "border", se tendra que 
+hacer con el valor "inherit" */
+a {
+    color: inherit;
+}
+
+p{
+    border: inherit;
+}
+
+/* Ahora bien si no se desea que el valor de un atributo no se}
+herede de su padre, se le debera de aplicar el valor "inital"
+a la propiedad que se le desea resetear el valor: */
+
+strong {
+    color: initial;
+}

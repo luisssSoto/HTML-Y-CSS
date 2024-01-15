@@ -1,0 +1,12 @@
+table{
+    background-color: #d14d68;
+    border-radius: 5px;
+}
+li{
+    list-style-type: lower-roman;
+}
+
+p{
+    white-space: pre;
+    font-family: 'Arial';
+}
