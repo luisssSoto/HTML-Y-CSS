@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad de las reglas</title>
+    <link rel="stylesheet" href="./especificidad_de_las_reglas.css">
+</head>
+<body>
+    <ul>
+        <!-- Reglas 3 y 5 (ganadora 3) -->
+        <li>Sin nada</li>
+        <!-- Reglas 2, 3, 4 y 5 (ganadora 2) -->
+        <li class="important">Con class</li>
+        <!-- Reglas 1, 3 y 5 (ganadora 1) -->
+        <li id="id1">Con id</li>
+        <!-- Reglas 1, 2, 3, 4 y 5 (ganadora 1) -->
+        <li id="id2" class="important">Con id y class</li>
+        <!-- Reglas 1, 2, 3, 4, y 5 (ganador 5) -->
+        <li id="id3" class="important" style="color: pink">Con id, class y style</li>
+    </ul>
+
+    <table>
+        <caption>Tabla de especificidad de las reglas de CSS</caption>
+        <thead>
+            <tr>
+                <td colspan="2"></td>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2">Regla #1</th>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th colspan="2">Regla #2</th>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th colspan="2">Regla #3</th>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th colspan="2">Regla #4</th>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="2">Regla #5</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tfoot>
+    </table>
+    <p>Si existe un empate de puntos se aplicara la ultima regla de css</p>
+</body>
+</html>

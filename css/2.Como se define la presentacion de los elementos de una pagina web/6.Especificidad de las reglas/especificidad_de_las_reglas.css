@@ -1,0 +1,41 @@
+/* La especificidad  o specifity es un termino 
+en CSS3 utilizado para resolver el problema que
+ se tiene cuando existe un conflicto de reglas  */
+
+/* La especificidad de un selector se calcula de la 
+con un puntaje: 
+A: 1 si existe style
+B: Cuenta el numero de ids
+C: Cuenta el numero de clases y pseudoclases
+C: Cuenta el numero de elementos y pseudoelementos */
+
+/* Regla 1 */
+#id1, #id2, #id3{
+    color: red;
+}
+
+/* Regla 2 */
+ul li.important{
+    color: green;
+}
+
+/* Regla 3 */
+ul li{
+    color: blue;
+}
+
+/* Regla 4 */
+li.important{
+    color: yellow;
+}
+
+/* Regla 5 */
+li{
+    color: purple;
+}
+
+/* Sin nada = azul
+Con class = green
+Con id = red 
+Con id y class = red 
+Con id, class y style = pink */
