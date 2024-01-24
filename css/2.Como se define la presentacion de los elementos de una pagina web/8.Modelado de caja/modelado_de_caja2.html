@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelado de caja 2da parte</title>
+    <link rel="stylesheet" href="./modelado_de_caja2.css">
+</head>
+<body>
+    <h1>Modelado de caja 2da parte</h1>
+    <p>A pesar de que las etiquetas div tienen el mismo valor para el atributo width, 
+        existe una diferencia en el valor de la propiedad box-sizing</p>
+    <div id="contentBox">box-sizing: content-box;</div>
+    <div id="borderBox">box-sizing: border-box;</div>
+    <p><strong>Nota:</strong> Como se puede observar el primer div tiene mas width que
+    su etiqueta hermana y esto es porque el valor de la propiedad box-sizing tiene una 
+    anchura de 200px solo del content pero la segunda etiqueta div tiene un width de 
+    200px tanto para content como para el border</p>
+    <br><br>
+    <h2>Otro ejemplo</h2>
+    <div class="box-sizing-content">
+        <div class="split">Este div ocupa la mitad izquierda</div>
+        <div class="split">Este div ocupa la mitad derecha</div>
+        <div class="clear-both">Este div aparece después</div>
+    </div>
+    
+    <div>Un div de separación</div>
+
+    <div class="box-sizing-border">
+        <div class="split">Este div ocupa la mitad izquierda</div>
+        <div class="split">Este div ocupa la mitad derecha</div>
+        <div class="clear-both">Este div aparece después</div>
+    </div>
+</body>
+</html>

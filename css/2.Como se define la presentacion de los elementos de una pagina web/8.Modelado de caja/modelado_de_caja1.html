@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelado de caje 1era parte</title>
+    <link rel="stylesheet" href="./modelado_de_caja1.css">
+</head>
+<body>
+    <h1>Modelado de caja 1era parte</h1>
+    <p>El modelado de caja se define en la siguiente imagen:</p>
+    <img src="./box_model.png" alt="modelado de caja">
+    <p>Como se puede observar los elementos se encuentran de la
+        siguiente manera:
+    </p>
+    <ol>
+        <caption>Desde el centro a la periferia</caption>
+        <li>content: contenido</li>
+        <li>padding: relleno</li>
+        <li>border: borde</li>
+        <li>margin: margen</li>
+    </ol>
+    <p>Nota: el atributo width y height solo se utilizan para el 
+    contenido y no tiene nada que ver con el padding, border y el 
+    margin</p>
+
+    <h2>Margenenes colapsables</h2>
+    <p>Para definir este concepto basta con simplificarlo 
+        en una imagen: </p>
+    <img src="./margenes_colapsables.png" alt="Margenes colapsables">
+    <p>Como se puede apreciar cuando 2 margenes se encuentran se <strong>superpone</strong>
+        el margen con mayor tamaño y no asi la sumatoria de ambos como se podria suponer</p>
+    
+    <h2>Ejemplo de margenes colapsables</h2>
+    <p class="margen-10">Este párrafo tiene margen de 10px</p>
+    <p class="margen-20">Este párrafo tiene margen de 20px</p>
+    <p class="margen-30">Este párrafo tiene margen de 30px</p>
+</body>
+</html>
