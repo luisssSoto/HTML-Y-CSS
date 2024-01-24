@@ -1,0 +1,41 @@
+#contentBox, #borderBox{
+    width: 200px;
+    border: 5px solid #000080;
+    padding: 15px;
+}
+
+#contentBox{
+    box-sizing: content-box;
+}
+
+#borderBox{
+    box-sizing: border-box;
+}
+
+p{
+    white-space: pre;
+}
+
+/* Segundo ejemplo */
+.box-sizing-content, .box-sizing-border{
+    width: 38em;
+    border: 1em solid black;
+}
+
+.box-sizing-content .split{
+    box-sizing: content-box;
+    width: 50%;
+    border: 1em silver ridge;
+    float: left;
+}
+
+.box-sizing-border .split{
+    box-sizing: border-box;
+    width: 50%;
+    border: 1em silver ridge;
+    float: left;
+}
+
+.clear-both{
+    clear: both;
+}
