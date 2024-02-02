@@ -1,0 +1,30 @@
+/* Este diseño se adapta al ancho de la pagina con
+el porcentaje pero tiene algunas carencias con 
+las pantallas grandes ya que pueden existir mayores
+longitudes de caracteres por linea, recordemos que
+lo maximo recomendado es de 80 caracteres por linea
+pero aun asi con resoluciones pequeñas el contenido 
+queda apretado o resulta dificil leer debido a que las
+letras apenas se ven en resoliuciones grandes */
+
+h1 #pie{
+    text-align: center;
+}
+
+#menu, #contenido, #info{
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+#menu{
+    width: 20%;
+}
+
+#contenido, #info{
+    width: 40%;
+}
+
+#pie{
+    clear: both;
+}
