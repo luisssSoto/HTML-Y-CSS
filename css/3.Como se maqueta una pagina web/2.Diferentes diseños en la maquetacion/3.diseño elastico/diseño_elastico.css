@@ -1,0 +1,39 @@
+/* Como se puede observar no se ha definido el ancho del contenido
+principal y es ahi donde se hace referencia al termino "ancho no
+fijo", lo que se hace es que se define el ancho de los elementos
+adyacentes y el sobrante que exista de la resolucion que se
+desea definir ese es el que se utilizara en el contenido principal */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#cabecera, #pie{
+    text-align: center;
+}
+
+#menu, #contenido, #info{
+    padding: 0;
+    margin: 0;
+}
+
+#menu{
+    position: absolute;
+}
+
+#contenido{
+    position: relative;
+    left: 10em;
+    margin-right: 35em;
+}
+
+#info{
+    position: absolute;
+    right: 0;
+    width: 25em;
+}
+
+#info h2{
+    margin-top: 0;
+}
