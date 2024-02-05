@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Ejemplo</title>
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="great.css" media="screen and (min-width: 981px)">
+    <link rel="stylesheet" href="medium.css" media="screen and (min-width: 481px) and (max-width: 980px)">
+    <link rel="stylesheet" href="mini.css" media="screen and (max-width: 480px)">
+</head>
+<body>
+    <header>
+        <h1>El titulo de mi sitio web</h1>
+        <h2 class="display-great">Grande</h2>
+        <h2 class="display-medium">Mediano</h2>
+        <h2 class="display-mini">Mini</h2>
+    </header>
+
+    <div id="wrapper">
+        <nav id="main-nav">
+            <h2>Mi menu</h2>
+            <ul class="menu display-great display-medium">
+                <li><a href=""></a>"Uno"</li>
+                <li><a href=""></a>"Dos"</li>
+                <li><a href=""></a>"Tres"</li>
+            </ul>
+
+            <select name="" id="" class="display-mini">
+                <option value="">Uno</option>
+                <option value="">Dos</option>
+                <option value="">Tres</option>
+            </select>
+        </nav>
+
+        <section id="main-section">
+            <h2>Mi contenido</h2>
+            <article>
+                <h3><a href="">Entrada 1</a></h3>
+                <p class="display-great display-medium">Un lorem ipsum resumido...</p>
+            </article>
+            <article>
+                <h3><a href="">Entrada 2</a></h3>
+                <p class="display-great display-medium">Un lorem ipsum resumido...</p>
+            </article>
+            <article>
+                <h3><a href="">Entrada 3</a></h3>
+                <p class="display-great display-medium">Un lorem ipsum resumido...</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>El tipico pie que nadie lee</p>
+        
+        <select name="" id="" class="display-mini">
+            <option value="">Uno</option>
+            <option value="">Dos</option>
+            <option value="">Tres</option>
+        </select>
+    </footer>
+    
+</body>
+</html>
